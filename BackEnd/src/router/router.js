@@ -1,9 +1,10 @@
 const express = require('express')
-const { app } = require('./booksRouter')
+const { bookRouter } = require('./booksRouter')
 
 const router = express()
 
-router.use('/', app)
+router.use('/', bookRouter)
+
 
 module.exports = {
     router

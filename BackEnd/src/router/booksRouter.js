@@ -1,14 +1,15 @@
 const express = require('express')
 const { getBook, addBook, getBookById, updateBook, deleteBook } = require('../controllers/books')
+const { blankValidation } = require('../middlewares/middlewares')
 
-const app = express()
+const bookRouter = express()
 
-app.get('/livros', getBook)
-app.get('/livros/:id', getBookById)
-app.put('/livro/:id', updateBook)
-app.post('/livro', addBook)
-app.delete('/livro/:id', deleteBook)
+bookRouter.get('/livros', getBook)
+bookRouter.get('/livros/:id', getBookById)
+bookRouter.put('/livro/:id', blankValidation, updateBook)
+bookRouter.post('/livro', blankValidation, addBook)
+bookRouter.delete('/livro/:id', deleteBook)
 
 module.exports = {
-    app
+    bookRouter
 }
