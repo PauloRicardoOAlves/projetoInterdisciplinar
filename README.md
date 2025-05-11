@@ -4,6 +4,16 @@
 Projeto interdisciplinar das disciplinas do terceiro semestre do curso de tecnologia em sistemas para internet, que é uma plataforma para venda online de livros universitários.
 
 
+## Vídeo sobre a entrega da segunda unidade
+
+[Assista ao vídeo](https://www.youtube.com/watch?v=oLdMDTfAYYQ)
+
+
+<video width="640" height="360" controls>
+  <source src="https://www.youtube.com/watch?v=oLdMDTfAYYQ" type="video/mp4">
+  Seu navegador não suporta a tag de vídeo.
+</video>
+
 ## Stack utilizada
 
 **Back-end:** Node, Express
