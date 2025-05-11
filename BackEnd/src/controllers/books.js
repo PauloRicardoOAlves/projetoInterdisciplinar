@@ -44,7 +44,7 @@ async function addBook(req, res) {
         autor,
         descricao,
         genero,
-        quatidade
+        quantidade
     } = req.body
 
     try {
@@ -53,7 +53,7 @@ async function addBook(req, res) {
             autor,
             descricao,
             genero,
-            quatidade
+            quantidade
         })
 
         return res.status(201).json({ Mensagem: 'Livro inserido com sucesso' })
@@ -92,7 +92,6 @@ async function updateBook(req, res) {
         )
 
         if(!book[0]){
-            console.log('aqui')
             return res.status(404).json({erro: 'Livro não encontrado!'})
         }
         
