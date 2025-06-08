@@ -11,10 +11,16 @@ const User = sequelize.define('Usuario', {
     nome: {
         type: DataTypes.STRING,
     },
+    email: {
+        type: DataTypes.STRING
+    },
+    senha: {
+        type: DataTypes.STRING
+    },
     tipo: {
         type: DataTypes.STRING
     }
-},{
+}, {
     tableName: 'usuarios',
     timestamps: false
 })

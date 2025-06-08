@@ -94,12 +94,12 @@ async function updateBook(req, res) {
         if(!book[0]){
             return res.status(404).json({erro: 'Livro não encontrado!'})
         }
-        
-        return res.status(200).json(book)
+
+        return res.status(200).json({"Mensagem": "Livro atualizado com sucesso"})
 
     } catch (error) {
         console.log(error)
-        return res.status(500).json({ 'Erro': 'Erro interno do servidor!' })
+        return res.status(500).json({ Erro: 'Erro interno do servidor!' })
     }
 
 }

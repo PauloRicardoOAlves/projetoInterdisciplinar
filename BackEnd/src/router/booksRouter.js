@@ -4,10 +4,10 @@ const { blankValidation } = require('../middlewares/middlewares')
 
 const bookRouter = express()
 
+bookRouter.post('/livro', blankValidation, addBook)
 bookRouter.get('/livros', getBook)
 bookRouter.get('/livros/:id', getBookById)
 bookRouter.put('/livro/:id', blankValidation, updateBook)
-bookRouter.post('/livro', blankValidation, addBook)
 bookRouter.delete('/livro/:id', deleteBook)
 
 module.exports = {
