@@ -3,6 +3,8 @@
 
 Projeto interdisciplinar das disciplinas do terceiro semestre do curso de tecnologia em sistemas para internet, que é uma plataforma para venda online de livros universitários.
 
+Link do deploy: https://projetointerdisciplinar.onrender.com
+
 
 ## Vídeo sobre a entrega da segunda unidade
 
